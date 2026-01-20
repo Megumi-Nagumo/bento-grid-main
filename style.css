@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url(assets/fonts/static/DMSans-Regular.ttf), url(assets/fonts/DMSans-VariableFont_opsz,wght.ttf);
+}
+
+p.min-sized {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+    color: hsl(233, 8%, 62%);
+}   
+
+p.small-sized {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: hsl(233, 8%, 62%);
+}
+
+p.mid-sized {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: -3px;
+    color: hsl(233, 8%, 62%);
+}
+
+p.max-sized {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: hsl(230, 5%, 53%);
+}
