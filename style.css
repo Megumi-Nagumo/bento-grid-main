@@ -171,12 +171,12 @@ span.span1 {
 .extra-tall-purple {
     display: flex;
     flex-direction: column;
-    max-width: 30vw;
-    min-height: auto;
     gap: 10px;
     text-align: center;
     background-color: hsl(252, 62%, 82%);
     border-radius: 10px;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -189,10 +189,11 @@ span.span1 {
 }
 
 .extra-tall-purple img {
-    width: 20vw;
+    position: absolute;
+    bottom: 1rem;   
+    right: -25%;    
+    width: 120%;
     height: auto;
-    align-self: center;
-    padding: 20px;
 }
 
 
