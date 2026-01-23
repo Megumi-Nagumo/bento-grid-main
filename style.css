@@ -3,12 +3,16 @@
     src: url(assets/fonts/static/DMSans-Regular.ttf), url(assets/fonts/DMSans-VariableFont_opsz,wght.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 p.min-sized {
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
-
-    color: hsl(233, 8%, 62%);
 }   
 
 p.small-sized {
@@ -16,7 +20,8 @@ p.small-sized {
     font-weight: 500;
     font-size: 30px;
     letter-spacing: -2px;
-    color: hsl(233, 8%, 62%);
+    line-height: 1.0;
+    color: hsl(0, 0%, 0%);
 }
 
 p.mid-sized {
@@ -24,12 +29,202 @@ p.mid-sized {
     font-weight: 500;
     font-size: 35px;
     letter-spacing: -3px;
-    color: hsl(233, 8%, 62%);
 }
 
 p.max-sized {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 50px;
-    color: hsl(230, 5%, 53%);
+}
+
+
+
+
+
+.main-box{
+    display: grid;
+    margin: 2rem 0rem;
+    padding: 1rem 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-rows: 180px;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    box-shadow: 10px 10px 30px rgb(122, 120, 120);
+}
+.wide-purple {
+    color: ivory;
+    background-color: hsl(252, 68%, 62%);
+    border-radius: 10px;
+    grid-column: span 2;
+    grid-row: span 2;
+    gap: 10px;
+}
+
+.wide-purple img {
+    width: 150px;
+    height: auto;
+}
+.wide-purple .min-sized {
+    color: white;
+}
+span.span1 {
+    color: hsl(52, 100%, 50%);
+}
+
+.small-white {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    gap: 10px;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.small-white img {
+    width: 250px;
+    height: auto;
+}
+
+.small-white.max-siezed p {
+    padding: 20px;
+    color: hsl(0, 0%, 0%);
+}
+
+.card.small-orange {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    min-height: 200px;
+    gap: 10px;
+    text-align: left;
+    background-color: #ffcc5c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.small-orange p {
+    z-index: 2; /* Ensure text is above the image */
+    margin-bottom: 50px; /* Add space at the bottom for the image */
+}
+.card.tucked img {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the image horizontally */
+    width: 90%;
+    z-index: 1;
+}
+
+.tall-nude, .tall-orange{
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    min-height: auto;
+    gap: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tall-nude {
+    background-color: hsl(33, 100%, 95%);
+}
+
+
+
+.tall-nude p, .tall-orange p {
+    margin-top: 20px;
+    padding: 20px;
+    color: hsl(0, 0%, 0%);
+    text-align: left;
+    line-height: 1.0;
+}
+.tall-nude img {
+    width: 200px;
+    height: auto;
+    align-self: center;
+    padding: 20px;
+}
+
+.tall-nude i {
+    font-style: italic;
+    color: hsl(252, 68%, 62%);
+}
+
+
+.tall-orange {
+    background-color: #ffcc5c;
+
+}
+
+.tall-orange img {
+    width: 20vw;
+    height: auto;
+    align-self: center;
+    padding: 20px;
+}
+
+.extra-tall-purple {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    min-height: auto;
+    gap: 10px;
+    text-align: center;
+    background-color: hsl(252, 62%, 82%);
+    border-radius: 10px;
+
+}
+
+.extra-tall-purple p {
+    margin-top: 20px;
+    padding: 20px;
+    color: hsl(0, 0%, 0%);
+    text-align: left;
+    line-height: 1.0;
+}
+
+.extra-tall-purple img {
+    width: 20vw;
+    height: auto;
+    align-self: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wide-purple-bottom {
+    color: white;
+    grid-column: span 2;
+    background: hsl(252, 68%, 62%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
